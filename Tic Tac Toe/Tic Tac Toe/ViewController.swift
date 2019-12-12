@@ -10,24 +10,24 @@ class ViewController: UIViewController {
     var Board = [0, 0, 0, 0, 0, 0, 0, 0, 0] //array storing game, every array locatiion a place on board
     //array starts at 0, tags start at 1
     let Combo = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6]
+        [0, 1, 2],//top horizontal
+        [3, 4, 5],//middle horizontal
+        [6, 7, 8],//bottom horizontal
+        [0, 3, 6],//left vertical
+        [1, 4, 7],//center vertical
+        [2, 5, 8],//right vertical
+        [0, 4, 8],//diagonal 1
+        [2, 4, 6]//diagonal 2
     ]
     //win condition array
-    var Player = 1
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var label2: UILabel!
+    var Player = 1//Player variable
+    @IBOutlet weak var label1: UILabel! //label declaration
+    @IBOutlet weak var label2: UILabel!//label2 declaration
     
     var GameState = true //check if game is running
     @IBAction func action(_ sender: AnyObject)
     {
-        if (Board[sender.tag-1] == 0 && GameState == true)
+        if (Board[sender.tag-1] == 0 && GameState == true) //check state
         {
             Board[sender.tag-1] = Player //can't override game pieces
         if (Player == 1)
