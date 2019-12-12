@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     var Player = 1//Player variable
     @IBOutlet weak var label1: UILabel! //label declaration
     @IBOutlet weak var label2: UILabel!//label2 declaration
+    @IBOutlet weak var label3: UILabel!//win condition label
+    @IBOutlet weak var label4: UILabel!//win condition label
     
     var GameState = true //check if game is running
     @IBAction func action(_ sender: AnyObject)
@@ -33,11 +35,17 @@ class ViewController: UIViewController {
         {
             sender.setImage(UIImage(named: "X.png"), for: UIControl.State())
             Player = 2 //swap player
+            label3.isHidden = false //show o turn
+            label3.text = "O turn" //display turn text
+            label4.isHidden = true //hide x turn
         }
         else
         {
             sender.setImage(UIImage(named: "O.png"), for: UIControl.State())
             Player = 1 //swap player
+            label4.isHidden = false //show x turn
+            label4.text = "X turn" //display turn text
+            label3.isHidden = true //hide o turn
         }
     }
         for combination in Combo
@@ -51,8 +59,10 @@ class ViewController: UIViewController {
                 {
                     
                     print ("X HAS WON!")//x wins
+                    
                    
                     label1.text = "X wins!"
+                    label2.isHidden = true
                    //not going to use optionals
                     
                     //currently outputs to console
@@ -60,19 +70,25 @@ class ViewController: UIViewController {
                 else
                 {
                    print ("O HAS WON!")//o wins
-                  
+                   
+                    
                    label2.text = "O wins!"
+                    label1.isHidden = true
                     //not going to use optionals
                     
                    
                     //currently outputs to console
                 }
                 
-                
+                //default display options
                 label1.isHidden = false
-                //hide button 1
+                //show button 1
                 label2.isHidden = false
-                //hide button 2
+                //show button 2
+                label3.isHidden = true
+                //hide button 3
+                label4.isHidden = true
+                //hide button 4
             }
         }
     }
