@@ -2,9 +2,7 @@
 //  ViewController.swift
 //  Tic Tac Toe
 //
-//  Created by Henry Meier on 12/08/19.
-//  Copyright © 2019 Henry Meier. All rights reserved.
-//
+
 import UIKit
 class ViewController: UIViewController {
     var Board = [0, 0, 0, 0, 0, 0, 0, 0, 0] //array storing game, every array locatiion a place on board
