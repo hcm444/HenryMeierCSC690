@@ -13,9 +13,9 @@
 		C50BFB0E23A1FA7700908A2C /* Tic_Tac_Toe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C50BFB0C23A1FA7700908A2C /* Tic_Tac_Toe.xcdatamodeld */; };
 		C50BFB1023A1FA7800908A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB0F23A1FA7800908A2C /* Assets.xcassets */; };
 		C50BFB1323A1FA7800908A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB1123A1FA7800908A2C /* LaunchScreen.storyboard */; };
-		C50BFB2123A1FC1900908A2C /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB2023A1FC1900908A2C /* Board.png */; };
-		C50BFB2323A1FC3A00908A2C /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB2223A1FC3A00908A2C /* Cross.png */; };
-		C50BFB2523A1FC4200908A2C /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB2423A1FC4200908A2C /* Nought.png */; };
+		C50BFB2723A2089F00908A2C /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB2623A2089F00908A2C /* O.png */; };
+		C50BFB2923A208C200908A2C /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB2823A208C200908A2C /* X.png */; };
+		C50BFB2B23A208CC00908A2C /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BFB2A23A208CC00908A2C /* Board.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		C50BFB0F23A1FA7800908A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50BFB1223A1FA7800908A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50BFB1423A1FA7800908A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C50BFB2023A1FC1900908A2C /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Board.png; path = "../../../../Downloads/Tic Tac Toe-2/Board.png"; sourceTree = "<group>"; };
-		C50BFB2223A1FC3A00908A2C /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cross.png; path = "../../../../Downloads/Tic Tac Toe-2/Cross.png"; sourceTree = "<group>"; };
-		C50BFB2423A1FC4200908A2C /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nought.png; path = "../../../../Downloads/Tic Tac Toe-2/Nought.png"; sourceTree = "<group>"; };
+		C50BFB2623A2089F00908A2C /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = O.png; path = ../../../../Desktop/O.png; sourceTree = "<group>"; };
+		C50BFB2823A208C200908A2C /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = X.png; path = ../../../../Desktop/X.png; sourceTree = "<group>"; };
+		C50BFB2A23A208CC00908A2C /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Board.png; path = ../../../../Desktop/Board.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +67,9 @@
 				C50BFB0923A1FA7700908A2C /* Main.storyboard */,
 				C50BFB0F23A1FA7800908A2C /* Assets.xcassets */,
 				C50BFB1123A1FA7800908A2C /* LaunchScreen.storyboard */,
-				C50BFB2023A1FC1900908A2C /* Board.png */,
-				C50BFB2423A1FC4200908A2C /* Nought.png */,
-				C50BFB2223A1FC3A00908A2C /* Cross.png */,
+				C50BFB2623A2089F00908A2C /* O.png */,
+				C50BFB2A23A208CC00908A2C /* Board.png */,
+				C50BFB2823A208C200908A2C /* X.png */,
 				C50BFB1423A1FA7800908A2C /* Info.plist */,
 				C50BFB0C23A1FA7700908A2C /* Tic_Tac_Toe.xcdatamodeld */,
 			);
@@ -134,11 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50BFB2523A1FC4200908A2C /* Nought.png in Resources */,
-				C50BFB2123A1FC1900908A2C /* Board.png in Resources */,
+				C50BFB2B23A208CC00908A2C /* Board.png in Resources */,
+				C50BFB2923A208C200908A2C /* X.png in Resources */,
 				C50BFB1323A1FA7800908A2C /* LaunchScreen.storyboard in Resources */,
-				C50BFB2323A1FC3A00908A2C /* Cross.png in Resources */,
 				C50BFB1023A1FA7800908A2C /* Assets.xcassets in Resources */,
+				C50BFB2723A2089F00908A2C /* O.png in Resources */,
 				C50BFB0B23A1FA7700908A2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
