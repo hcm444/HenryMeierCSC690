@@ -7,7 +7,7 @@
 //
 import UIKit
 class ViewController: UIViewController {
-    var GameBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0] //array storing game, every array locatiion a place on board
+    var Board = [0, 0, 0, 0, 0, 0, 0, 0, 0] //array storing game, every array locatiion a place on board
     //array starts at 0, tags start at 1
     let Combo = [
         [0, 1, 2],
@@ -24,12 +24,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     
-    var ActiveState = true //check if game is running
+    var GameState = true //check if game is running
     @IBAction func action(_ sender: AnyObject)
     {
-        if (GameBoard[sender.tag-1] == 0 && ActiveState == true)
+        if (Board[sender.tag-1] == 0 && GameState == true)
         {
-            GameBoard[sender.tag-1] = Player //can't override game pieces
+            Board[sender.tag-1] = Player //can't override game pieces
         if (Player == 1)
         {
             sender.setImage(UIImage(named: "X.png"), for: UIControl.State())
@@ -43,12 +43,12 @@ class ViewController: UIViewController {
     }
         for combination in Combo
         {
-            if GameBoard[combination[0]] != 0
-                && GameBoard[combination[0]] == GameBoard[combination[1]]
-                && GameBoard[combination[1]] == GameBoard[combination[2]]//win conditions
+            if Board[combination[0]] != 0
+                && Board[combination[0]] == Board[combination[1]]
+                && Board[combination[1]] == Board[combination[2]]//win conditions
             {
-                ActiveState = false
-                if GameBoard[combination[0]] == 1
+                GameState = false
+                if Board[combination[0]] == 1
                 {
                     
                     print ("X HAS WON!")//x wins
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        //helps clear unwanted memory 
+        //helps clear unwanted memory
     }
 
 }
