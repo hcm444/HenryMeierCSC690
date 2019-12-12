@@ -134,10 +134,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label1" destination="XcN-SH-G2t" id="m4U-24-ELu"/>
-                        <outlet property="label2" destination="AgC-cQ-Pbn" id="MXz-pF-V8v"/>
-                        <outlet property="label3" destination="w9n-UE-jhc" id="ctP-Sj-QBl"/>
-                        <outlet property="label4" destination="i3J-td-y4v" id="PbM-Ad-Hww"/>
+                        <outlet property="Oturnlabel" destination="w9n-UE-jhc" id="ctP-Sj-QBl"/>
+                        <outlet property="Owinslabel" destination="AgC-cQ-Pbn" id="MXz-pF-V8v"/>
+                        <outlet property="Xturnlabel" destination="i3J-td-y4v" id="PbM-Ad-Hww"/>
+                        <outlet property="Xwinslabel" destination="XcN-SH-G2t" id="m4U-24-ELu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     ]
     //win condition array
     var Player = 1//Player variable
-    @IBOutlet weak var label1: UILabel! //label declaration
-    @IBOutlet weak var label2: UILabel!//label2 declaration
-    @IBOutlet weak var label3: UILabel!//win condition label
-    @IBOutlet weak var label4: UILabel!//win condition label
+    @IBOutlet weak var Xwinslabel: UILabel! //label declaration
+    @IBOutlet weak var Owinslabel: UILabel!//label2 declaration
+    @IBOutlet weak var Oturnlabel: UILabel!//win condition label
+    @IBOutlet weak var Xturnlabel: UILabel!//win condition label
     
     var GameState = true //check if game is running
     @IBAction func action(_ sender: AnyObject)
@@ -35,17 +35,17 @@ class ViewController: UIViewController {
         {
             sender.setImage(UIImage(named: "X.png"), for: UIControl.State())
             Player = 2 //swap player
-            label3.isHidden = false //show o turn
-            label3.text = "O turn" //display turn text
-            label4.isHidden = true //hide x turn
+            Oturnlabel.isHidden = false //show o turn
+            Oturnlabel.text = "O turn" //display turn text
+            Xturnlabel.isHidden = true //hide x turn
         }
         else
         {
             sender.setImage(UIImage(named: "O.png"), for: UIControl.State())
             Player = 1 //swap player
-            label4.isHidden = false //show x turn
-            label4.text = "X turn" //display turn text
-            label3.isHidden = true //hide o turn
+            Xturnlabel.isHidden = false //show x turn
+            Xturnlabel.text = "X turn" //display turn text
+            Oturnlabel.isHidden = true //hide o turn
         }
     }
         for combination in Combo
@@ -61,8 +61,8 @@ class ViewController: UIViewController {
                     print ("X HAS WON!")//x wins
                     
                    
-                    label1.text = "X wins!"
-                    label2.isHidden = true
+                    Xwinslabel.text = "X wins!"
+                    Owinslabel.isHidden = true
                    //not going to use optionals
                     
                     //currently outputs to console
@@ -72,8 +72,8 @@ class ViewController: UIViewController {
                    print ("O HAS WON!")//o wins
                    
                     
-                   label2.text = "O wins!"
-                    label1.isHidden = true
+                   Owinslabel.text = "O wins!"
+                    Xwinslabel.isHidden = true
                     //not going to use optionals
                     
                    
@@ -81,13 +81,13 @@ class ViewController: UIViewController {
                 }
                 
                 //default display options
-                label1.isHidden = false
+                Xwinslabel.isHidden = false
                 //show button 1
-                label2.isHidden = false
+                Owinslabel.isHidden = false
                 //show button 2
-                label3.isHidden = true
+                Oturnlabel.isHidden = true
                 //hide button 3
-                label4.isHidden = true
+                Xturnlabel.isHidden = true
                 //hide button 4
             }
         }
