@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     ]
     var Player = 1
     var ActiveState = true //check if game is running
-    @IBAction func action(_ sender: AnyObject)
+    @IBAction func action(_ sender: AnyObject) //AnyObject swift update
     {
-        if (GameBoard[sender.tag-1] == 0 && ActiveState == true)
+        if (GameBoard[sender.tag-1] == 0 && ActiveState == true) //check if game is "running"
         {
             GameBoard[sender.tag-1] = Player //can't override game pieces
         if (Player == 1)
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             Player = 1 //swap player
         }
     }
-        for combination in Combo
+        for combination in Combo //win condition checker
         {
             if GameBoard[combination[0]] != 0 
             && GameBoard[combination[0]] == GameBoard[combination[1]] 
