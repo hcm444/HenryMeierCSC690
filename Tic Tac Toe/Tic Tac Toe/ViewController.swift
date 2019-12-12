@@ -39,7 +39,9 @@ class ViewController: UIViewController {
     }
         for combination in Combo
         {
-            if GameBoard[combination[0]] != 0 && GameBoard[combination[0]] == GameBoard[combination[1]] && GameBoard[combination[1]] == GameBoard[combination[2]]//win conditions
+            if GameBoard[combination[0]] != 0 
+            && GameBoard[combination[0]] == GameBoard[combination[1]] 
+            && GameBoard[combination[1]] == GameBoard[combination[2]]//win conditions
             {
                 ActiveState = false
                 if GameBoard[combination[0]] == 1
